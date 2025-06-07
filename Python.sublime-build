@@ -1,8 +1,18 @@
-a=6
-b=8
-Tong=a+b
-print("Tong:",Tong)
-Tru=a-b
-print("Tru:",Tru)
-Nhan=a*a
-print("Nhan:",Nhan)
+a = float(input("Nhập số đầu tiên: "))
+b = float(input("Nhập số thứ hai: "))
+c = float(input("Nhập số thứ ba: "))
+
+numbers = [a, b, c]
+max_num = max(numbers)
+min_num = min(numbers)
+
+def calculate_statistics(a, b, c):
+    average = (a + b + c) / 3
+    median = a + b + c - max_num - min_num
+    range_value = max_num - min_num
+    
+    print("Average:", average)
+    print("Median:", median)
+    print("Range:", range_value)
+
+calculate_statistics(a, b, c)
