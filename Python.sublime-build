@@ -1,0 +1,8 @@
+a=6
+b=8
+Tong=a+b
+print("Tong:",Tong)
+Tru=a-b
+print("Tru:",Tru)
+Nhan=a*a
+print("Nhan:",Nhan)
